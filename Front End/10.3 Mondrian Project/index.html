@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+           /*
+         Write your CSS here
+         Gap Colour: #000
+         White: #F0F1EC
+         Red: #E72F24
+         Black: #232629
+         Blue: #004592
+         Yellow: #F9D01E
+
+         For dimensions, see dimensions.png image.
+         HINT: Remember you can't change the properties of grid lines.
+         But grid lines are transparent!
+         */
+
+         body {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+           padding: 0;
+         }
+
+           .container {
+             display: grid;
+             width: 748px;
+             height: 748px;
+             grid-template-columns: 320px 9px 198px 9px 153px 9px auto;
+             grid-template-rows: 414px 9px 130px 12px 155px 9px auto;
+           }
+
+           .one {
+             background-color: #e72f24;
+           }
+
+           .two {
+             background-color: #000;
+             grid-column-start: 2;
+             grid-row-start: 1;
+             grid-row-end: 8;
+           }
+           .three {
+             background-color: #f0f1ec;
+             grid-column-start: 3;
+             grid-column-end: 8;
+           }
+
+           .four {
+             background-color: #000;
+             grid-column-start: 1;
+             grid-row-end: 3;
+             grid-column-end: 8;
+           }
+
+         .five{
+           background-color: #F0F1EC;
+           grid-row-start: 3;
+           grid-row-end: 6;
+         }
+
+         .six{
+           background-color: #F0F1EC ;
+           grid-area: 3/3/6/6;
+
+
+         }
+
+         .seven{
+           background-color: #000;
+           grid-row-start: 3;
+           grid-row-end: 8;
+         }
+
+         .eight{
+           background-color: #004592;
+         }
+
+         .nine{
+           background-color: #000;
+         }
+
+         .ten{
+           background-color: #F0F1EC;
+           grid-row-start: 5;
+           grid-row-end: 8;
+         }
+
+         .eleven{
+           background-color: #000;
+           grid-area: 6/1/7/6;
+         }
+
+         .twelve{
+           background-color: #F0F1EC;
+
+         }
+
+         .thirteen{
+           background-color: #F9D01E;
+         }
+
+         .fourteen{
+           background-color: #000;
+         }
+
+         .fifteen{
+           background-color: #232629;
+         }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+      <div class="five"></div>
+      <div class="six"></div>
+      <div class="seven"></div>
+      <div class="eight"></div>
+      <div class="nine"></div>
+      <div class="ten"></div>
+      <div class="eleven"></div>
+      <div class="twelve"></div>
+      <div class="thirteen"></div>
+      <div class="fourteen"></div>
+      <div class="fifteen"></div>
+    </div>
+
+    <!-- Write your HTML here -->
+  </body>
+</html>

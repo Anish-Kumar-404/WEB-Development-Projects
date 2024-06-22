@@ -1,0 +1,19 @@
+/* Write your code here: */
+h1,h2{
+    color: yellowgreen;
+}
+
+.box >p{
+    color: violet;
+}
+/* the below will not work if applied as a child selector bcoz li is a grandchild of .box class div */
+.box li { 
+    color: firebrick;
+}
+li.done{
+    color: green;
+}
+
+ul p.done{
+    font-size: 0.5rem;
+}
